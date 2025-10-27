@@ -1,3 +1,52 @@
+# **Estructura de carpetas** 
+
+📦 kiba-dashboard/
+│
+├── 📁 public/                 # Archivos estáticos (logos, íconos, etc.)
+│   ├── logo.svg
+│   └── favicon.ico
+│
+├── 📁 src/
+│   ├── 📁 components/         # Componentes reutilizables (UI)
+│   │   ├── Navbar.astro
+│   │   ├── Sidebar.astro
+│   │   ├── CardStat.astro
+│   │   ├── Table.astro
+│   │   └── PlayerForm.astro
+│   │
+│   ├── 📁 layouts/            # Estructuras base de páginas
+│   │   ├── BaseLayout.astro
+│   │   └── DashboardLayout.astro
+│   │
+│   ├── 📁 pages/              # Rutas del sistema
+│   │   ├── index.astro               # Pantalla de inicio de sesión
+│   │   ├── dashboard.astro           # Panel principal
+│   │   ├── jugadores.astro           # Gestión de jugadores
+│   │   ├── pagos.astro               # Pagos y cuentas de acceso
+│   │   ├── configuracion.astro       # Configuración general
+│   │   └── api/                      # Endpoints (si usas Astro API routes)
+│   │       └── jugadores.ts
+│   │
+│   ├── 📁 lib/                # Conexión y utilidades
+│   │   ├── supabaseClient.ts        # Inicialización del cliente Supabase
+│   │   ├── auth.ts                  # Funciones de autenticación
+│   │   └── utils.ts                 # Funciones auxiliares (formato fechas, colores, etc.)
+│   │
+│   ├── 📁 styles/
+│   │   ├── base.css
+│   │   └── tailwind.css
+│   │
+│   └── env.d.ts               # Tipado de variables de entorno
+│
+├── .env                      # Claves Supabase (anon y url)
+├── astro.config.mjs
+├── tailwind.config.mjs
+├── tsconfig.json
+├── package.json
+└── README.md
+
+
+
 # Astro Starter Kit: Basics
 
 ```sh
