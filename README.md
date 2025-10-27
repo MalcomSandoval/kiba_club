@@ -5,7 +5,7 @@
 ├── 📁 public/                 # Archivos estáticos (logos, íconos, etc.)
 │   ├── logo.svg
 │   └── favicon.ico
-│
+│ 
 ├── 📁 src/
 │   ├── 📁 components/         # Componentes reutilizables (UI)
 │   │   ├── Navbar.astro
